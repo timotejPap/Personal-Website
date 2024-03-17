@@ -4,12 +4,13 @@
     box-sizing: border-box;
 }
 
-body {
+body {/*
     background-image: url(/personal-web/images/matrix.jpg);
-    background-size: cover;
+    background-size: cover;*/
+    background-color: rgb(53 52 52);
 }
 
-/* HEADER */
+                        /* HEADER */
 
 header {
     position: fixed;
@@ -21,43 +22,66 @@ header {
     font-size: larger;
     background-color: black;
     width: 1050px;
+    height: 73px;
 }
 
-.nav {
+/* Navigate*/
+
+nav {
     position: relative;
-    top: 10px;
-    border: 2px solid white;
+    margin-top: -4px;
+}
+
+nav ul li {
+    width: 112px;
+    list-style-type: none;
+    float: left;
     border-radius: 10px;
-    margin: 10px;
+    margin: 12px;
     padding: 5px;
+    text-align: center;
+}
+
+nav ul li a {
+    width: 100px;
+    padding: 2px;
     color: white;
     text-decoration: none;
+    border-radius: 10px;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 a:hover {
-    background-color: rgb(255, 255, 255);
-    color: black;
+    border-bottom: 2px solid white;
+    border-radius: 10px;
 }
 
 a#main {
-    background-color: rgb(255, 255, 255);
-    color: black;
+    border-bottom: 2px solid white;
+    border-radius: 10px;
 }
 
 a#techstack {
-    background-color: rgb(255, 255, 255);
-    color: black;
-}
-
-a#contact {
-    background-color: rgb(255, 255, 255);
-    color: black;
+    border-bottom: 2px solid white;
+    border-radius: 10px;
 }
 
 a#certificates {
-    background-color: rgb(255, 255, 255);
-    color: black;
+    border-bottom: 2px solid white;
+    border-radius: 10px;
 }
+
+a#contact {
+    border-bottom: 2px solid white;
+    border-radius: 10px;
+}
+
+/*Datetime*/
 
 header p {
     font-family: 'Courier New', Courier, monospace;
@@ -65,19 +89,10 @@ header p {
     font-weight: bold;
     color: white;
     font-size:larger;
-    margin: 0px 20px;
+    margin: -30px 10px;
 }
 
-p {
-    font-family: 'Courier New', Courier, monospace;
-    text-align: left;
-    font-weight: bold;
-    color: rgb(0, 255, 153);
-    font-size:larger;
-    margin: 0px 20px;
-}
-
-/* MAIN */
+                        /* MAIN */
 
 .container {
     position: absolute;
@@ -91,6 +106,14 @@ p {
     height: auto;
 }
 
+p {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+    font-weight: bold;
+    color: rgb(255, 0, 81);
+    font-size:larger;
+    margin: 0px 20px;
+}
 img.me {
     position: fixed;
     top: 113px;
@@ -103,7 +126,7 @@ img.me {
 }
 
 
-/* FOOTER */
+                        /* FOOTER */
 footer {
     position: absolute;
     border: 3px solid rgb(255, 255, 255);

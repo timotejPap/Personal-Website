@@ -10,17 +10,22 @@
 </head>
 <body>
     <header>
-        <a href="index.html" class="nav">Základňa</a>
-        <a href="TechStack.html" class="nav" id="techstack">TechStack</a>
-        <a href="certificates.html" class="nav">Certifikáty</a>
-        <a href="contact.html" class="nav">Kontakt</a>
-        
+        <nav>
+            <ul>
+                <li><a href="index.html">Základňa</a></li>
+                <li><a href="TechStack.html" id="techstack">TechStack</a></li>
+                <li><a href="certificates.html">Certifikáty</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+            <div class="clearfix"></div>
+        </nav>
         <p>Dnes je: <span id="datetime"></span>
             <script>
                 var dt = new Date();
                 document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
             </script>
         </p>
+
     </header>
         
     <main class="container">
