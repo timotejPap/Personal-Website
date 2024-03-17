@@ -1,0 +1,71 @@
+/* MAIN */
+
+.introduction {
+    color: rgb(255, 255, 255);
+}
+
+li {
+    list-style: none;
+    color: white;
+    margin: 20px 0px 0px 30px;
+    font-size: 20px;
+}
+
+.names {
+    position: relative;
+    bottom: 41px;
+    left: 80px;
+}
+
+img#robotf {
+    width: 75px;
+    margin-left: -15px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 16px;
+}
+
+img#selenium {
+    width: 50px;
+    height: 40px;
+}
+
+img#postman {
+    width: 55px;
+    height: 45px;
+    border-radius: 5px;
+}
+
+img#sql {
+    width: 65px;
+    height: 40px;
+}
+
+img#python {
+    width: 45px;
+    height: 40px;
+}
+
+img#jira {
+    width: 50px;
+    height: 45px;
+    border-radius: 5px;
+}
+
+img#github {
+    width: 70px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+img#html {
+    width: 45px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+img#css {
+    width: 50px;
+    height: 45px;
+    border-radius: 5px;
+}

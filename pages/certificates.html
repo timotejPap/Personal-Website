@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/personal-web/CSS/styles.css">
+    <link rel="stylesheet" href="/personal-web/CSS/certificates.css">
+    <script src="/personal-web/script.js"></script>
+    <title>Timotej Pap</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="nav">Základňa</a>
+        <a href="TechStack.html" class="nav">TechStack</a>
+        <a href="certificates.html" class="nav" id="certificates">Certifikáty</a>
+        <a href="contact.html" class="nav">Kontakt</a>
+
+        <div class="date">
+        <p>Dnes je: <span id="datetime"></span>
+            <script>
+                var dt = new Date();
+                document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+            </script>
+        </p>
+        </div>
+    </header>
+        
+    <main class="container">
+        <div>
+            <div class="certificates">
+                <img src="/personal-web/images/SDA certificate_Strana_1.jpg" alt="" id="certificates-pics">
+                <p class="about-certificates">Text</p>
+                <br>
+                
+                <img src="/personal-web/images/SDA certificate_Strana_2.jpg" alt="" id="certificates-pics"><br>
+                <img src="/personal-web/images/Certifikát Kitner.jpg" alt="" id="certificates-pics"><br>
+                <img src="/personal-web/images/Skillmea - Certifikát Git a GitHub základy.jpg" alt="" id="certificates-pics">
+
+                
+            </div>
+        </div>
+    </main>
+
+    <img src="/personal-web/images/me.jpg" alt="to som ja, Timotej" class="me"><br>
+
+
+    <footer>
+        <p>
+            &copy; Timotej Pap 2024
+        </p>
+    </footer>
+
+</body>
+</html>

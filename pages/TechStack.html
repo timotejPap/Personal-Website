@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/personal-web/CSS/styles.css">
+    <link rel="stylesheet" href="/personal-web/CSS/techstack.css">
+    <script src="script.js"></script>
+    <title>Timotej Pap</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="nav">Základňa</a>
+        <a href="TechStack.html" class="nav" id="techstack">TechStack</a>
+        <a href="certificates.html" class="nav">Certifikáty</a>
+        <a href="contact.html" class="nav">Kontakt</a>
+        
+        <p>Dnes je: <span id="datetime"></span>
+            <script>
+                var dt = new Date();
+                document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+            </script>
+        </p>
+
+    </header>
+        
+    <main class="container">
+        <p class="introduction">Nástroje s ktorými som sa počas kurzov stretol a s ktorými sa hrám aj vo voľnom čase:</p><br>
+        <ul>
+            <li>
+                <img src="/personal-web/images/robotFramework-logo.png" alt="" id="robotf">
+                <div class="names">Robot Framework</div>
+                <p>test</p>
+            </li>
+            <li>
+                <img src="/personal-web/images/selenium-logo.jpg" alt="" id="selenium">
+                <div class="names">Selenium</div>
+            </li>
+            <li>
+                <img src="/personal-web/images/postman-logo.jpg" alt="" id="postman">
+                <div class="names">Postman</div>
+            </li>
+            <li>
+                <img src="/personal-web/images/SQL-logo.png" alt="" id="sql">
+                <div class="names">SQL</div>
+            </li>
+            <li>
+                <img src="/personal-web/images/python-logo.png" alt="" id="python">
+                <div class="names">Python</div>
+            </li>
+            <li>
+                <img src="/personal-web/images/jira-logo.png" alt="" id="jira">
+                <div class="names">JIRA</div>
+            </li>
+            <li>
+                <img src="/personal-web/images/github-logo.png" alt="" id="github">
+                <div class="names">GitHub</div>
+            </li>
+            <li>
+                <img src="/personal-web/images/html-logo.jpg" alt="" id="html">
+                <div class="names">HTML</div>
+            </li>
+            <li>
+                <img src="/personal-web/images/css-logo.jpg" alt="" id="css">
+                <div class="names">CSS</div>
+            </li>
+        </ul>
+ 
+    </main>
+
+    <img src="/personal-web/images/me.jpg" alt="to som ja, Timotej" class="me"><br>
+
+    <footer>
+        <p>
+            &copy; Timotej Pap 2024
+        </p>
+    </footer>
+
+</body>
+</html>
