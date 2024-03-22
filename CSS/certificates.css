@@ -1,12 +1,10 @@
 /* MAIN */
 
-.about-certificates {
-    font-family: 'Courier New', Courier, monospace;
-    text-align: left;
-    font-weight: bold;
-    color: rgb(255, 0, 0);
-    font-size:larger;
-    margin: 0px 20px;
+/* hr */
+.line {
+    position: relative;
+    top: 5px;
+    border: 1px solid black;
 }
 
 #certificates-pics {
@@ -17,8 +15,7 @@
     height: 300px;
 }
 
-img:hover {
+#certificates-pics:hover {
     transform: scale(2);
     align-items: center;
 }
-

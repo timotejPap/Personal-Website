@@ -12,61 +12,91 @@
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">Základňa</a></li>
-                <li><a href="TechStack.html" id="techstack">TechStack</a></li>
-                <li><a href="certificates.html">Certifikáty</a></li>
-                <li><a href="contact.html">Kontakt</a></li>
+                <li><a href="index.html">Základňa <span style='font-size:20px;'>&#127984;</span></a></li>
+                <li><a href="TechStack.html" class="btn">TechStack <span style='font-size:20px;'>&#128295;</span></a></li>
+                <li><a href="certificates.html">Certifikáty <span style='font-size:20px;'>&#128220;</span></a></li>
+                <li><a href="contact.html">Kontakt <span style='font-size:20px;'>&#128222;</span></a></li>
             </ul>
             <div class="clearfix"></div>
         </nav>
-        <p>Dnes je: <span id="datetime"></span>
+        <div class="datum-cas">Dnes je: <span id="datetime"></span>
             <script>
                 var dt = new Date();
                 document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
             </script>
-        </p>
-
+        </div>
     </header>
         
     <main class="container">
-        <p class="introduction">Nástroje s ktorými som sa počas kurzov stretol a s ktorými sa hrám aj vo voľnom čase:</p><br>
-        <p class="introduction">Plánujem pridať krátke zhrnutie čo som sa pri jednotlivých nástrojoch naučil.</p>
+        <h1>Nástroje s ktorými pracujem</h1><br>
+        <p class="introduction">Nástroje s ktorými som sa počas kurzov stretol a s ktorými sa hrám aj vo voľnom čase:</p>
+        <hr class="line">
+
         <ul>
-            <li>
-                <img src="/personal-web/images/robotFramework-logo.png" alt="" id="robotf">
-                <div class="names">Robot Framework</div>
-            </li>
-            <li>
+            <li class="tools-box">
                 <img src="/personal-web/images/selenium-logo.jpg" alt="" id="selenium">
-                <div class="names">Selenium</div>
+                <div><a href="https://www.selenium.dev/" class="btn-names" target="_blank">Selenium</a>
+                    <p class="text-teschstack">Základy automatizovaného testovania som získal na prvom kurze, kde sme si ukazovali testy v Selenium v Jave. <br>
+                    Bolo to zaujímavé, a preto som si tvoril vlastné testy, ktoré mám na GitHube.</p>
+                </div>
             </li>
-            <li>
+            <li class="tools-box">
+                <img src="/personal-web/images/robotFramework-logo.jpg" alt="" id="robotf">
+                <div><a href="https://robotframework.org/" class="btn-names" target="_blank">Robot Framework</a>
+                    <p class="text-teschstack">S automatizovaným testovaním som pokračoval v kurze Jak automatizovat testy, kde sme testovali v Robot Framework. <br>
+                    Páči sa mi jeho štruktúra, kde si viem rozdeliť oblasti do jednotlivých úsekov.</p>
+                </div>
+            </li>
+            <li class="tools-box">
                 <img src="/personal-web/images/postman-logo.jpg" alt="" id="postman">
-                <div class="names">Postman</div>
+                <div><a href="https://www.postman.com/" class="btn-names" target="_blank">Postman</a>
+                    <p class="text-teschstack">Na prvom kurze sme mali aj základy Rest API. Precvičovali sme si volania cez nástroj Postman. <br>
+                    Vo voľnom čase si často pripomínam volania cez cvičné stránky.</p>
+                </div>
             </li>
-            <li>
-                <img src="/personal-web/images/SQL-logo.png" alt="" id="sql">
-                <div class="names">SQL</div>
+            <li class="tools-box">
+                <img src="/personal-web/images/sql-logo.jpg" alt="" id="sql">
+                <div><a href="https://en.wikipedia.org/wiki/SQL" class="btn-names" target="_blank">SQL</a>
+                    <p class="text-teschstack">Vrámci kurzu Software tester sme sa stretli aj s interakciou s informáciami v databázach vďaka jazyku SQL. <br>
+                    Precvičovali sme si selektovanie a úpravu dát na cvičných stránkach. Vo voľnom čase si to raz za čas precvičím, nech si to zopakujem.</p>
+                </div>
             </li>
-            <li>
-                <img src="/personal-web/images/python-logo.png" alt="" id="python">
-                <div class="names">Python</div>
+            <li class="tools-box">
+                <img src="/personal-web/images/python-logo.jpg" alt="" id="python">
+                <div><a href="https://www.python.org/" class="btn-names" target="_blank">Python</a>
+                    <p class="text-teschstack">Základy Pythonu som sa naučil na kurze Python developer junior. Po prvom kurze som sa chcel ešte viac zoznámiť s programovaním.
+                    Preberali sme teóriu, ale tvorili sme aj menšie skripty a aj väčšie kódy.
+                    </p>
+                </div>
             </li>
-            <li>
+            <li class="tools-box">
                 <img src="/personal-web/images/jira-logo.png" alt="" id="jira">
-                <div class="names">JIRA</div>
+                <div><a href="https://www.atlassian.com/software/jira" class="btn-names" target="_blank">JIRA</a>
+                    <p class="text-teschstack">V prvom kurze Software tester sme mali možnosť stretnúť sa s JIRA. Je to tiketovací nástroj na riadenie 
+                    projektu a manažovanie úloh v tíme. <br>
+                    Mám s ním teda aj praktické skúsenosti.</p>
+                </div>
             </li>
-            <li>
+            <li class="tools-box">
                 <img src="/personal-web/images/github-logo.png" alt="" id="github">
-                <div class="names">GitHub</div>
+                <div><a href="https://github.com/" class="btn-names" target="_blank">GitHub</a>
+                    <p class="text-teschstack">Verziovací nástroj potrebný snáď pre každého IT-čkára. Naučil som sa ho na prvom kurze a využívam ho aj pri svojich projektoch.</p>
+                </div>
             </li>
-            <li>
+            <li class="tools-box">
                 <img src="/personal-web/images/html-logo.jpg" alt="" id="html">
-                <div class="names">HTML</div>
+                <div><a href="https://en.wikipedia.org/wiki/HTML" class="btn-names" target="_blank">HTML</a>
+                    <p class="text-teschstack">S HTML a CSS som sa stretol už na strednej škole na hodinách informatiky, kde sme sa učili základy web dizajnu. 
+                        Vo voľnom čase som si potom aj sám niečo tvoril. <br>
+                        Keďže teraz vstupujem do testingu, videl som ako prínosné vedieť s tým lepšie pracovať. Dôkazom je aj tento môj web, kde sa s tým pasujem.
+                    </p>
+                </div>
             </li>
-            <li>
+            <li class="tools-box">
                 <img src="/personal-web/images/css-logo.jpg" alt="" id="css">
-                <div class="names">CSS</div>
+                <div><a href="https://en.wikipedia.org/wiki/CSS" class="btn-names" target="_blank">CSS</a>
+                    <p class="text-teschstack"></p>
+                </div>
             </li>
         </ul>
  

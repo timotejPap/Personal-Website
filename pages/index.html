@@ -11,35 +11,40 @@
     <header>
         <nav>
             <ul>
-                <li><a href="index.html" id="main">Základňa</a></li>
-                <li><a href="TechStack.html">TechStack</a></li>
-                <li><a href="certificates.html">Certifikáty</a></li>
-                <li><a href="contact.html">Kontakt</a></li>
+                <li><a href="index.html" class="btn">Základňa <span style='font-size:20px;'>&#127984;</span></a></li>
+                <li><a href="TechStack.html">TechStack <span style='font-size:20px;'>&#128295;</span></a></li>
+                <li><a href="certificates.html">Certifikáty <span style='font-size:20px;'>&#128220;</span></a></li>
+                <li><a href="contact.html">Kontakt <span style='font-size:20px;'>&#128222;</span></a></li>
             </ul>
             <div class="clearfix"></div>
         </nav>
-        <p>Dnes je: <span id="datetime"></span>
+        <div class="datum-cas">Dnes je: <span id="datetime"></span>
             <script>
                 var dt = new Date();
                 document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
             </script>
-        </p>
-
+        </div>
     </header>
         
     <main class="container">
         
-        <p>Vítam ťa na mojej stránke</p><br>
-        <p>Neskôr sem pridám zmysluplný text</p><br>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, distinctio voluptate autem rem repellat quaerat sequi porro exercitationem tenetur inventore quo, ea ratione sunt. Tempora incidunt ipsam ut cumque! Error?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, distinctio voluptate autem rem repellat quaerat sequi porro exercitationem tenetur inventore quo, ea ratione sunt. Tempora incidunt ipsam ut cumque! Error?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, distinctio voluptate autem rem repellat quaerat sequi porro exercitationem tenetur inventore quo, ea ratione sunt. Tempora incidunt ipsam ut cumque! Error?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, distinctio voluptate autem rem repellat quaerat sequi porro exercitationem tenetur inventore quo, ea ratione sunt. Tempora incidunt ipsam ut cumque! Error?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, distinctio voluptate autem rem repellat quaerat sequi porro exercitationem tenetur inventore quo, ea ratione sunt. Tempora incidunt ipsam ut cumque! Error?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, distinctio voluptate autem rem repellat quaerat sequi porro exercitationem tenetur inventore quo, ea ratione sunt. Tempora incidunt ipsam ut cumque! Error?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, distinctio voluptate autem rem repellat quaerat sequi porro exercitationem tenetur inventore quo, ea ratione sunt. Tempora incidunt ipsam ut cumque! Error?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, distinctio voluptate autem rem repellat quaerat sequi porro exercitationem tenetur inventore quo, ea ratione sunt. Tempora incidunt ipsam ut cumque! Error?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, distinctio voluptate autem rem repellat quaerat sequi porro exercitationem tenetur inventore quo, ea ratione sunt. Tempora incidunt ipsam ut cumque! Error?</p>
+        <h1>Vitaj</h1><br>
+
+        <p>Vítam ťa na mojej stránke <span style='font-size:20px;'>&#128075;</span><br>
+        Táto stránka je vytvorená vrámci môjho osobného samoštúdia HTML, CSS a trochu Javascript-u.<br>
+        Neočakávaj tu preto (zatiaľ) nič svetoborné.
+        </p><br>
+        <p>Ak chceš vedieť prečo som ju vytvoril a čo je jej zmyslom, čítaj ďalej a preklikávaj.</p><br><br>
+        <hr class="line"><br>
+        <p class="about-me">
+            Som <strong>juniorný manuálny a automatizovaný tester</strong>, ktorý má za sebou 3 kurzy (Software tester, Junior Python Developer, Jak automatizovat testy) 
+            ukončené <a href="certificates.html" class="btn-about-me">certifikátmi</a>. <br><br>
+            Naučil som sa teóriu testovania software, rôzne techniky, úrovne testovania, základy programovania v JAVA a Python, SQL, API 
+            a pracovať s ďalšími <a href="TechStack.html" class="btn-about-me">nástrojmi</a>. <br>
+            S nadobudnutými zručnosťami stále pracujem a pokračujem v samoštúdiu. <br><br>
+            Túto stránku som vytvoril na svoju prezentáciu a zároveň aj ako portfólio mojich prác.
+        </p>
+        
     </main>
 
     <img src="/personal-web/images/me.jpg" alt="to som ja, Timotej" class="me"><br>

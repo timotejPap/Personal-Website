@@ -12,36 +12,41 @@
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">Základňa</a></li>
-                <li><a href="TechStack.html">TechStack</a></li>
-                <li><a href="certificates.html">Certifikáty</a></li>
-                <li><a href="contact.html" id="contact">Kontakt</a></li>
+                <li><a href="index.html">Základňa <span style='font-size:20px;'>&#127984;</span></a></li>
+                <li><a href="TechStack.html">TechStack <span style='font-size:20px;'>&#128295;</span></a></li>
+                <li><a href="certificates.html">Certifikáty <span style='font-size:20px;'>&#128220;</span></a></li>
+                <li><a href="contact.html" class="btn">Kontakt <span style='font-size:20px;'>&#128222;</span></a></li>
             </ul>
             <div class="clearfix"></div>
         </nav>
-        <p>Dnes je: <span id="datetime"></span>
+        <div class="datum-cas">Dnes je: <span id="datetime"></span>
             <script>
                 var dt = new Date();
                 document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
             </script>
-        </p>
-
+        </div>
     </header>
         
     <main class="container">
-        
-        <p>Tu budú kontaktné údaje.</p><br>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, distinctio voluptate autem rem repellat quaerat sequi porro exercitationem tenetur inventore quo, ea ratione sunt. Tempora incidunt ipsam ut cumque! Error?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, distinctio voluptate autem rem repellat quaerat sequi porro exercitationem tenetur inventore quo, ea ratione sunt. Tempora incidunt ipsam ut cumque! Error?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, distinctio voluptate autem rem repellat quaerat sequi porro exercitationem tenetur inventore quo, ea ratione sunt. Tempora incidunt ipsam ut cumque! Error?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, distinctio voluptate autem rem repellat quaerat sequi porro exercitationem tenetur inventore quo, ea ratione sunt. Tempora incidunt ipsam ut cumque! Error?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, distinctio voluptate autem rem repellat quaerat sequi porro exercitationem tenetur inventore quo, ea ratione sunt. Tempora incidunt ipsam ut cumque! Error?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, distinctio voluptate autem rem repellat quaerat sequi porro exercitationem tenetur inventore quo, ea ratione sunt. Tempora incidunt ipsam ut cumque! Error?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, distinctio voluptate autem rem repellat quaerat sequi porro exercitationem tenetur inventore quo, ea ratione sunt. Tempora incidunt ipsam ut cumque! Error?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, distinctio voluptate autem rem repellat quaerat sequi porro exercitationem tenetur inventore quo, ea ratione sunt. Tempora incidunt ipsam ut cumque! Error?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, distinctio voluptate autem rem repellat quaerat sequi porro exercitationem tenetur inventore quo, ea ratione sunt. Tempora incidunt ipsam ut cumque! Error?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, distinctio voluptate autem rem repellat quaerat sequi porro exercitationem tenetur inventore quo, ea ratione sunt. Tempora incidunt ipsam ut cumque! Error?</p>
-        
+        <h1>Chceš ma kontaktovať?</h1><br>
+        <p class="introduction">V prípade záujmu o kontakt, prikladám možnosti, ako sa môžeme spojiť.</p>
+        <hr class="line">
+
+        <ul>
+            <li class="contact-box">
+                <img src="/personal-web/images/linkedinlogo.png" alt="" id="linkedin">
+                <div>
+                    <a href="https://www.linkedin.com/in/timotejpap1991/" class="btn-contact-names" target="_blank">LinkedIn</a>
+                </div>
+            </li>
+            <li class="contact-box">
+                <img src="/personal-web/images/github-logo.png" " alt="" id="github">
+                <div>
+                    <a href="https://github.com/timotejPap?tab=repositories" class="btn-contact-names" target="_blank">GitHub</a>
+                </div>
+            </li>
+
+        </ul>
     </main>
 
     <img src="/personal-web/images/me.jpg" alt="to som ja, Timotej" class="me"><br>

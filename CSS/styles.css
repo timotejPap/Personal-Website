@@ -4,36 +4,38 @@
     box-sizing: border-box;
 }
 
-body {/*
-    background-image: url(/personal-web/images/matrix.jpg);
-    background-size: cover;*/
-    background-color: rgb(53 52 52);
+body {
+    background-color: rgb(226, 220, 220);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
                         /* HEADER */
 
 header {
     position: fixed;
-    border: 3px solid rgb(255, 255, 255);
-    border-radius: 10px;
-    color: rgb(255, 255, 255);
-    margin: 0px 100px 0px 331px;
+    border: 1px solid rgb(0, 0, 0);
+    font-family: "Times New Roman", Times, serif;
+    /* border-radius: 10px; */
+    transform: translate(31.5%, 0%);
     padding: 10px;
     font-size: larger;
-    background-color: black;
+    background: rgb(255, 255, 255);
+    z-index: 1000;
     width: 1050px;
-    height: 73px;
+    height: 72px;
 }
 
 /* Navigate*/
 
 nav {
     position: relative;
-    margin-top: -4px;
+    margin-top: -10px;
 }
 
 nav ul li {
-    width: 112px;
+    width: 140px;
     list-style-type: none;
     float: left;
     border-radius: 10px;
@@ -43,10 +45,16 @@ nav ul li {
 }
 
 nav ul li a {
-    width: 100px;
-    padding: 2px;
-    color: white;
+    display: inline-block;
+    width: 128px;
+    padding: 4px;
+    color: rgb(0, 0, 0);
     text-decoration: none;
+    border-radius: 10px;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid rgb(0, 0, 0);
     border-radius: 10px;
 }
 
@@ -56,38 +64,19 @@ nav ul li a {
     clear: both;
 }
 
-a:hover {
-    border-bottom: 2px solid white;
-    border-radius: 10px;
-}
-
-a#main {
-    border-bottom: 2px solid white;
-    border-radius: 10px;
-}
-
-a#techstack {
-    border-bottom: 2px solid white;
-    border-radius: 10px;
-}
-
-a#certificates {
-    border-bottom: 2px solid white;
-    border-radius: 10px;
-}
-
-a#contact {
-    border-bottom: 2px solid white;
+.btn {
+    display: inline-block;
+    border-bottom: 2px solid rgb(0, 0, 0);
     border-radius: 10px;
 }
 
 /*Datetime*/
 
-header p {
+.datum-cas {
     font-family: 'Courier New', Courier, monospace;
     text-align: right;
     font-weight: bold;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size:larger;
     margin: -30px 10px;
 }
@@ -95,25 +84,42 @@ header p {
                         /* MAIN */
 
 .container {
-    position: absolute;
+    position: relative;
     top: 70px;
-    border: 3px solid rgb(255, 255, 255);
-    border-radius: 10px;
-    margin: 0px 137px 0px 331px;
+    border: 1px solid rgb(0, 0, 0);
+    /* border-radius: 10px; */
+    transform: translate(31.5%, 0%);
     padding: 10px;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     width: 1050px;
     height: auto;
 }
 
 p {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Times New Roman", Times, serif;
     text-align: left;
     font-weight: bold;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-size:larger;
     margin: 0px 20px;
 }
+
+.line {
+    position: relative;
+    bottom: 10px;
+    border: 1px solid black;
+}
+
+.about-me {
+    font-size: 15px;
+    width: 650px;
+    line-height: 25px;
+}
+
+.btn-about-me:hover {
+    color: rgb(240, 76, 0);
+}
+
 img.me {
     position: fixed;
     top: 113px;
@@ -121,25 +127,26 @@ img.me {
     left: -70px;
     height: 480px;
     background-image: url("images/me.jpg");
-    border-right: 2px solid black;
-    border-radius: 50px;
+    border-right: 1px solid black;
+    /* border-radius: 50px; */
 }
 
 
                         /* FOOTER */
 footer {
-    position: absolute;
-    border: 3px solid rgb(255, 255, 255);
-    border-radius: 10px;
-    color: rgb(255, 255, 255);
-    margin: 1000px 100px 0px 331px;
-    padding: 10px;
-    background-color: black;
+    position: sticky;
+    font-family: "Times New Roman", Times, serif;
+    bottom: 0px;
+    border: 1px solid rgb(0, 0, 0);
+    /* border-radius: 10px; */
+    margin: 1000px 100px 20px 331px;
+    padding: 10px 10px 10px 0px;
+    background-color: rgb(255, 255, 255);
     width: 1050px;
 }
 
 footer p {
     font-size: 10px;
     text-align: left;
-    color: white;
+    color: rgb(0, 0, 0);
 }
